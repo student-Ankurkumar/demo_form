@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8c2727;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+}
+.title_small {
+  font-size: 20px;
+}
+.form_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimum(200px, 1fr));
+  gap: 20px;
+}
+
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+.half {
+  display: flex;
+  flex-flow: row;
+}
+
+label {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+input:focus {
+  outline-color: red;
+}
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button {
+  background-color: red;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: green;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+@media (max-width: 460) {
+  .textarea_control {
+    grid-column: 1 / span 2;
+  }
+}
